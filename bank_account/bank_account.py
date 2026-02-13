@@ -68,7 +68,7 @@ class BankAccount(ABC):
         except (TypeError, ValueError):
             self._balance = 0.0
 
-        # ---- date_created validation (Assignment 2 requirement) ----
+        # ---- date_created validation ----
         if isinstance(date_created, date):
             self._date_created: date = date_created
         else:
